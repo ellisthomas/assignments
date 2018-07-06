@@ -43,12 +43,12 @@ app.config(function($routeProvider) {
             templateUrl: "partials/auth.html",
             controller: "AuthCtrl"
         }).when("/assignment/list", {
-            templateUrl: "partials/assignments-list.html",
+            templateUrl: "partials/assignment-list.html",
             controller: "AssignmentListCtrl",
             resolve: {isAuth}
         })
         .when("/assignment/new", {
-            templateUrl: "partials/item-new.html",
+            templateUrl: "partials/assignment-new.html",
             controller: "AssignmentNewCtrl",
             resolve: {isAuth}
 
@@ -59,7 +59,7 @@ app.config(function($routeProvider) {
             resolve: {isAuth}
         })
         .when("/item/edit/:id", {
-            templateUrl: "partials/item-new.html",
+            templateUrl: "partials/assignment-new.html",
             controller: "AssignmentEditCtrl",
             resolve: {isAuth}
         })
